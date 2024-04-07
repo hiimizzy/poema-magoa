@@ -19,11 +19,13 @@ html, body{
     --cor3:#1B7CFA;
     --cor4: #1B36FA;
     --cor5: #FAF7E8;
+    --cor6:#C4E7F9;
 }
 
 header{
-    background-color: var(--cor3);
-    text-align: center;  
+    background-color: var(--cor1);
+    text-align: center; 
+    padding-top: 30px; 
 }
 
 header > p > a:hover{
@@ -65,8 +67,8 @@ section > pre{
 }
 
 section.normal{
-    background-color: var(--cor0);
-    color: white;
+    background-color: var(--cor6);
+    color: black;
 }
 
 footer{
@@ -84,6 +86,6 @@ footer > p > a{
 }
 
 footer > p > a:hover{
-    color: var(--cor5);
+    color: var(--cor1);
     
 }
