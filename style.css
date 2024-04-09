@@ -2,14 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap')
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
 html, body{
+    font-family: var(--font1);
     min-height: 100vh;
     background-color: aliceblue;
+}
+
+:root{
+    --font0: "Playfair Display", serif;
+    --font1: Verdana, Geneva, Tahoma, sans-serif; 
+    --font2: "Sriracha", cursive;
 }
 
 :root{
@@ -34,13 +43,11 @@ text-decoration: underline;
 }
 
 header > h1{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
-    font-style: normal;
+    font-family: var(--font0);
     color: var(--cor5);
     padding-top:50 px;
     font-variant: small-caps;
+    font-size: 10vh;
 }
 
 header > p {
@@ -60,16 +67,48 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height:  2em;
+    font-family: var(--font2);
 }
 
 section > pre{
     white-space: pre-line;
+    font-family: var(--font1);
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.315);
+    color: darkblue;
+    box-shadow: inset 6px 6px 13px px rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(1, 27, 29, 0.336);
+    text-shadow: 1px 1px opx black;
+}
+
+section#img1{
+    background-image: url('img/background002.jpg');
+    background-position: right center;
+    font-size: 2em;
+    text-shadow: 1px 1px opx black;   
+}
+
+section#img2{
+    background-image: url('img/image (1).png');
+    background-position: right center;
+    background-size: cover;
 }
 
 section.normal{
     background-color: var(--cor6);
     color: black;
 }
+
 
 footer{
     text-align: center;
